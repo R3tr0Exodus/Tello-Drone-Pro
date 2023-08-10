@@ -9,11 +9,10 @@ https://github.com/R3tr0Exodus/Tello-Drone-Pro
 Hvad giver den af muligheder og begrænsninger? 
  
 Eksempler på spørgsmål man kunne besvare:
+
 Hvilke teknologier sidder i dronen?
 720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
 Indbygget flyvecomputer fra markedets ledende producent, DJI
-
-
 
 Propeller
 Motorer
