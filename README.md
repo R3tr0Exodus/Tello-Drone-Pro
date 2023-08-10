@@ -3,12 +3,6 @@
 
 Beskrivelse
 Forsøg at danne et overblik og forbered en lille (slideshow) præsentation af Tello dronen: TELLO DRONE
-
-
-
-
-
-
 Github:
 https://github.com/R3tr0Exodus/Tello-Drone-Pro
  
