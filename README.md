@@ -1,5 +1,7 @@
 https://docs.google.com/document/d/1Cpf_0VRekULcgdIa_9v82oh_nze8ZdOngG8VMyCbRRI/edit?usp=sharing
 
+![Tellopic](Readme_files/Tello_Drone.jpg)
+
 Hvilke teknologier sidder i dronen?
 * 720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
 * Indbygget flyvecomputer fra markedets ledende producent, DJI
