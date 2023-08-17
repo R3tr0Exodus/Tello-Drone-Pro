@@ -1,18 +1,18 @@
 https://docs.google.com/document/d/1Cpf_0VRekULcgdIa_9v82oh_nze8ZdOngG8VMyCbRRI/edit?usp=sharing
 
 Hvilke teknologier sidder i dronen?
-720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
-Indbygget flyvecomputer fra markedets ledende producent, DJI
-Propeller
-Motorer
-Luftfartøjsindikator
-Kamera
-Sluk/Volumen/Knap
-Antenner
-Vision Positioning System
-Flybatteri
-Micro USB-port
-Propellerbeskyttere
+*720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
+*Indbygget flyvecomputer fra markedets ledende producent, DJI
+*Propeller
+*Motorer
+*Luftfartøjsindikator
+*Kamera
+*Sluk/Volumen/Knap
+*Antenner
+*Vision Positioning System
+*Flybatteri
+*Micro USB-port
+*Propellerbeskyttere
 
 
 Hvordan holder den sig i luften?
