@@ -13,8 +13,7 @@ Hvilke teknologier sidder i dronen?
 * Flybatteri
 * Micro USB-port
 * Propellerbeskyttere
-
-
+---
 Hvordan holder den sig i luften?
 For at svæve bevæger to af en drones fire rotorer sig med uret, mens de to andre bevæger sig mod uret, hvilket sikrer, at dronens sideværts momentum forbliver afbalanceret.
 
