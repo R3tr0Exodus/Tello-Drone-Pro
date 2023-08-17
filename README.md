@@ -22,10 +22,11 @@ Hvordan holder den sin position?
 Dette er muligt ved hjælp af GPS og et kompas kan dronen holde sig fuldstændig stabilt i luften uden du rør ved fjernkontrollen. 
 så snart dronen vipper vil den automatisk komme tilbage til sit gamle position ellers koder du den til at holde positionen.
 desuden kan man også styre gennem throttle
----
+
 ---
 Hvordan kobler man til den?
 Der er en telefon app som kan tilslutte sig til dronen, men mirakuløst kan man også bruge scratch som kodesprog til dronen samt nok også andre kodesprog.
+
 ---
 Hvordan kan man programmere den? – Og med hvilke værktøjer/sprog?
 Når droneblock/scratch downloaded kan du gå igang med at programmere
