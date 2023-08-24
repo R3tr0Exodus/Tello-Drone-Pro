@@ -8,7 +8,7 @@
 * 720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
 * Indbygget flyvecomputer fra markedets ledende producent, DJI
 * Propeller
-* Motorer
+* Motore
 * Luftfartøjsindikator
 * Kamera
 * Sluk/Volumen/Knap
@@ -31,7 +31,7 @@
 
 ---
 ### Hvordan kan man programmere den? – Og med hvilke værktøjer/sprog?
-- Når droneblock/scratch downloaded kan du gå igang med at programmere sproget der bliver brugt er python
+- Når droneblock/scratch er downloaded, kan du gå igang med at programmere. Sproget der bliver brugt er python
 
 ---
 ### Hvad skal der til for at komme i gang med python? Giv et eller flere bud på en opgave der kan løses ved at programmere Tello dronen.
