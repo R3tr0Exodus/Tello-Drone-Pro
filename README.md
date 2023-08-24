@@ -22,25 +22,24 @@ For at svæve bevæger to af en drones fire rotorer sig med uret, mens de to and
 ---
 Hvordan holder den sin position?
 Dette er muligt ved hjælp af GPS og et kompas kan dronen holde sig fuldstændig stabilt i luften uden du rør ved fjernkontrollen. 
-så snart dronen vipper vil den automatisk komme tilbage til sit gamle position ellers koder du den til at holde positionen.
+* Så snart dronen vipper vil den automatisk komme tilbage til sit gamle position ellers koder du den til at holde positionen.
 desuden kan man også styre gennem throttle
 
 ---
 Hvordan kobler man til den?
-Der er en telefon app som kan tilslutte sig til dronen, men mirakuløst kan man også bruge scratch som kodesprog til dronen samt nok også andre kodesprog.
+* Der er en telefon app som kan tilslutte sig til dronen, men mirakuløst kan man også bruge scratch som kodesprog til dronen samt nok også andre kodesprog.
 
 ---
 Hvordan kan man programmere den? – Og med hvilke værktøjer/sprog?
-Når droneblock/scratch downloaded kan du gå igang med at programmere
-sproget der bliver brugt er python
+* Når droneblock/scratch downloaded kan du gå igang med at programmere sproget der bliver brugt er python
 
 ---
 Hvad skal der til for at komme i gang med python?
 Giv et eller flere bud på en opgave der kan løses ved at programmere Tello dronen.
 
-Automatiseret Follow and Record. Automatiseringen af droneoperatører under optagelse af videoer og film.
+* Automatiseret Follow and Record. Automatiseringen af droneoperatører under optagelse af videoer og film.
 
-Sikkerheds Scanning af Område. Patrulje og Overvågning af større områder som industriparker, byggepladser eller andre grunde.
+* Sikkerheds Scanning af Område. Patrulje og Overvågning af større områder som industriparker, byggepladser eller andre grunde.
 
 
 
