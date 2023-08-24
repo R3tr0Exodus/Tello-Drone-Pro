@@ -34,7 +34,7 @@ https://docs.google.com/document/d/1Cpf_0VRekULcgdIa_9v82oh_nze8ZdOngG8VMyCbRRI/
 - Når droneblock/scratch downloaded kan du gå igang med at programmere sproget der bliver brugt er python
 
 ---
-### Hvad skal der til for at komme i gang med python? Giv et eller flere bud på en opgave der kan løses ved at programmere Tello dronen.****
+### Hvad skal der til for at komme i gang med python? Giv et eller flere bud på en opgave der kan løses ved at programmere Tello dronen.
 - Automatiseret Follow and Record. Automatiseringen af droneoperatører under optagelse af videoer og film.
 
 - Sikkerheds Scanning af Område. Patrulje og Overvågning af større områder som industriparker, byggepladser eller andre grunde.
