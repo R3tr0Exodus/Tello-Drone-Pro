@@ -48,7 +48,7 @@
 ### 31-08-2023
 - Testing af pc til tello connection afslørede mulige forbindelses problemer inkluderende delay, fejl eller umuligt at forbinde.
   
-- Ved de lukkedes tilslutninger fik vi undersøgt de forskellige funktioner i Tello library testet. Det var speciel fokus på at få den til at tage et billede. Dog stødte vi ind i problem hvor systemet bare crashede, da den skulle vise os billedet. 
+- Ved de lykkedes tilslutninger fik vi undersøgt de forskellige funktioner i Tello library testet. Det var speciel fokus på at få den til at tage et billede. Dog stødte vi ind i problem hvor systemet bare crashede, da den skulle vise os billedet. 
 
 - Vi ville gerne have nået mere men meget af tiden gik med usuccessfulde connections til tello, og forståelse af dens umiddelbare "stabilet" under flyvning. PS den kan godt lide at flyve sidelæns åbenbart.
 
