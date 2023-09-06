@@ -6,6 +6,33 @@
 **Trello:**
 [Link](https://trello.com/b/wWMjh3nS)
 
+## Problemformulering
+
+ Hvordan kan vi adressere udfordringen ved at tage gruppebilleder, hvor nøjagtig timing er afgørende, ved at udvikle en kodningsløsning til Trello-platformen? Løsningen skal tillade en dronelignende enhed at vente i 5 sekunder uden bevægelse fra deltagerne og derefter tage et billede, med det ultimative mål at levere fejlfri gruppebilleder under alle forhold.
+
+###Delspørgsmål : 
+* Hvordan styrer man dronen hvor den skal hen? Hvordan fpr man framet billedet rigtigt 
+* Hvordan ved man, at billedet bliver godt?
+
+## Krav/features - I must-have
+
+**De basale evner dronen kan:**
+* Skal kunne tage billeder 
+* At tage billeder med farve
+
+## Krav/features - Nice-to-have
+* Tage billeder fra flere vinkler 
+* **Forbrugere skal kunne vælge antal ansigter med i billedet**, dronen bliver ved med at tage x antal billeder indtil alle ansigter er med eller kan ses på billedet.
+* Hvad skal den gør hvis alle ansigter ikke er med (alle 4)
+
+bruger kan selv vælge antal faces , blive ved med at tage pics til kravet er opfyldt 
+  
+
+* Skal kunne have mindst et ansigt med x
+* Bestem antal faces
+
+## MVP
+---
 ### Hvilke teknologier sidder i dronen?
 * 720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
 * Indbygget flyvecomputer fra markedets ledende producent, DJI
@@ -19,6 +46,7 @@
 * Flybatteri
 * Micro USB-port
 * Propellerbeskyttere
+
 ---
 ### Hvordan holder den sig i luften?
 - For at svæve bevæger to af en drones fire rotorer sig med uret, mens de to andre bevæger sig mod uret, hvilket sikrer, at dronens sideværts momentum forbliver afbalanceret.
