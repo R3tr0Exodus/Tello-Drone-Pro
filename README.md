@@ -25,7 +25,7 @@
 * **Forbrugere skal kunne vælge antal ansigter med i billedet**, dronen bliver ved med at tage x antal billeder indtil alle ansigter er med eller kan ses på billedet.
 * Hvad skal den gør hvis alle ansigter ikke er med (alle 4)
 
-*Bruger kan selv vælge antal faces , blive ved med at tage pics til kravet er opfyldt* 
+_Bruger kan selv vælge antal faces, blive ved med at tage pics til kravet er opfyldt_
   
 * Skal kunne have mindst et ansigt med x
 * Bestem antal faces
