@@ -1,8 +1,10 @@
-# Tello Drone
+![image](https://github.com/R3tr0Exodus/Tello-Drone-Pro/assets/104348330/19722f62-1707-4a3a-ae97-aaef100b1b4c)# Tello Drone
 <img src="https://github.com/R3tr0Exodus/Tello-Drone-Pro/blob/main/Readme_files/Tello_Drone.jpg" width="270" height="220" img align="right"/>
 
 **Docs:**
 [Link](https://docs.google.com/document/d/1Cpf_0VRekULcgdIa_9v82oh_nze8ZdOngG8VMyCbRRI/edit?usp=sharing)
+**Trello:**
+[Link](https://trello.com/b/wWMjh3nS)
 
 ### Hvilke teknologier sidder i dronen?
 * 720p kamera - dette betyder at den kan både filme og tage 5mp billeder op til 100 meters afstand.
