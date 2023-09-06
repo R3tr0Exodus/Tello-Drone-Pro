@@ -1,4 +1,4 @@
-![image](https://github.com/R3tr0Exodus/Tello-Drone-Pro/assets/104348330/19722f62-1707-4a3a-ae97-aaef100b1b4c)# Tello Drone
+# Tello Drone
 <img src="https://github.com/R3tr0Exodus/Tello-Drone-Pro/blob/main/Readme_files/Tello_Drone.jpg" width="270" height="220" img align="right"/>
 
 **Docs:**
