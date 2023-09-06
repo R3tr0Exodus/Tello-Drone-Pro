@@ -10,7 +10,7 @@
 
  Hvordan kan vi adressere udfordringen ved at tage gruppebilleder, hvor nøjagtig timing er afgørende, ved at udvikle en kodningsløsning til Trello-platformen? Løsningen skal tillade en dronelignende enhed at vente i 5 sekunder uden bevægelse fra deltagerne og derefter tage et billede, med det ultimative mål at levere fejlfri gruppebilleder under alle forhold.
 
-###Delspørgsmål : 
+### Delspørgsmål : 
 * Hvordan styrer man dronen hvor den skal hen? Hvordan fpr man framet billedet rigtigt 
 * Hvordan ved man, at billedet bliver godt?
 
