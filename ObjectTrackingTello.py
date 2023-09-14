@@ -26,7 +26,7 @@ print(me.get_battery())
 
 me.streamoff()
 me.streamon()
-######################## 
+########################
 
 frameWidth = width
 frameHeight = height
