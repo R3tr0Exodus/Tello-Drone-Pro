@@ -70,7 +70,7 @@ def stackImages(scale,imgArray):
                     imgArray[x][y] = cv2.resize(imgArray[x][y], (0, 0), None, scale, scale)
                 else:
                     imgArray[x][y] = cv2.resize(imgArray[x][y], (imgArray[0][0].shape[1], imgArray[0][0].shape[0]), None, scale, scale)
-                if len(imgArray[x][y].shape) == 2: imgArray[x][y]= cv2.cvtColor( imgArray[x][y], cv2.COLOR_GRAY2BGR)
+                if len(imgArray[x][y].shape) == 2: imgArray[x][y]= cv2.cvtColor( imgArray[x][y], cv2.COLOR_GRAY2RGB)
         imageBlank = np.zeros((height, width, 3), np.uint8)
         hor = [imageBlank]*rows
         hor_con = [imageBlank]*rows
@@ -83,7 +83,7 @@ def stackImages(scale,imgArray):
                 imgArray[x] = cv2.resize(imgArray[x], (0, 0), None, scale, scale)
             else:
                 imgArray[x] = cv2.resize(imgArray[x], (imgArray[0].shape[1], imgArray[0].shape[0]), None,scale, scale)
-            if len(imgArray[x].shape) == 2: imgArray[x] = cv2.cvtColor(imgArray[x], cv2.COLOR_GRAY2BGR)
+            if len(imgArray[x].shape) == 2: imgArray[x] = cv2.cvtColor(imgArray[x], cv2.COLOR_GRAY2RGB)
         hor= np.hstack(imgArray)
         ver = hor
     return ver
@@ -95,7 +95,7 @@ def getContours(img,imgContour):
         area = cv2.contourArea(cnt)
         areaMin = cv2.getTrackbarPos("Area", "Parameters")
         if area > areaMin:
-            cv2.drawContours(imgContour, cnt, -1, (255, 0, 255), 7)
+            cv2.drawContours(imgContour, cnt, -1, (255, 255, 0), 7)
             peri = cv2.arcLength(cnt, True)
             approx = cv2.approxPolyDP(cnt, 0.02 * peri, True)
             #print(len(approx))
@@ -129,11 +129,11 @@ def getContours(img,imgContour):
         else: dir=0
 
 def display(img):
-    cv2.line(img,(int(frameWidth/2)-deadZone,0),(int(frameWidth/2)-deadZone,frameHeight),(255,255,0),3)
-    cv2.line(img,(int(frameWidth/2)+deadZone,0),(int(frameWidth/2)+deadZone,frameHeight),(255,255,0),3)
-    cv2.circle(img,(int(frameWidth/2),int(frameHeight/2)),5,(0,0,255),5)
-    cv2.line(img, (0,int(frameHeight / 2) - deadZone), (frameWidth,int(frameHeight / 2) - deadZone), (255, 255, 0), 3)
-    cv2.line(img, (0, int(frameHeight / 2) + deadZone), (frameWidth, int(frameHeight / 2) + deadZone), (255, 255, 0), 3)
+    cv2.line(img, (int(frameWidth/2)-deadZone, 0), (int(frameWidth/2)-deadZone, frameHeight), (255, 255, 0), 3)
+    cv2.line(img, (int(frameWidth/2)+deadZone, 0), (int(frameWidth/2)+deadZone, frameHeight), (255, 255, 0), 3)
+    cv2.circle(img, (int(frameWidth/2), int(frameHeight/2)), 5, (0, 0, 255), 5)
+    cv2.line(img, (0, int(frameHeight/2)-deadZone), (frameWidth, int(frameHeight/2)-deadZone), (255, 255, 0), 3)
+    cv2.line(img, (0, int(frameHeight/2)+deadZone), (frameWidth, int(frameHeight/2)+deadZone), (255, 255, 0), 3)
 
 while True:
 
@@ -142,7 +142,7 @@ while True:
     myFrame = frame_read.frame
     img = cv2.resize(myFrame, (width, height))
     imgContour = img.copy()
-    imgHsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    imgHsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
 
     h_min = cv2.getTrackbarPos("HUE Min","HSV")
     h_max = cv2.getTrackbarPos("HUE Max", "HSV")
@@ -156,10 +156,10 @@ while True:
     upper = np.array([h_max,s_max,v_max])
     mask = cv2.inRange(imgHsv,lower,upper)
     result = cv2.bitwise_and(img,img, mask = mask)
-    mask = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
+    mask = cv2.cvtColor(mask, cv2.COLOR_GRAY2RGB)
 
     imgBlur = cv2.GaussianBlur(result, (7, 7), 1)
-    imgGray = cv2.cvtColor(imgBlur, cv2.COLOR_BGR2GRAY)
+    imgGray = cv2.cvtColor(imgBlur, cv2.COLOR_RGB2GRAY)
     threshold1 = cv2.getTrackbarPos("Threshold1", "Parameters")
     threshold2 = cv2.getTrackbarPos("Threshold2", "Parameters")
     imgCanny = cv2.Canny(imgGray, threshold1, threshold2)
