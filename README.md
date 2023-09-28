@@ -81,5 +81,9 @@ _Bruger kan selv vælge antal faces, blive ved med at tage pics til kravet er op
 
 - Vi ville gerne have nået mere men meget af tiden gik med usuccessfulde connections til tello, og forståelse af dens umiddelbare "stabilet" under flyvning. PS den kan godt lide at flyve sidelæns åbenbart.
 
-
-
+### 14-09-2023
+- Object Tracking med op/ned/højre/venstre testet og success ved brug af dette github kode/projekt https://github.com/murtazahassan/Tello-Object-Tracking/tree/master
+  
+- Undersøgt mulighed for tilføjelse af frem og tilbage "flyvning" udfra objektets størrelse
+  
+- Problemer grundet mangel på droner "så mangler test af de sidste kode med frem og tilbage"
