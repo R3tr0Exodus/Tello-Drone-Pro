@@ -12,6 +12,7 @@ predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
 width = 640
 height = 480
 deadZone = 50  # Adjust this dead zone as needed
+guidelines_enabled = True  # Toggle guidelines display with 'g' key
 
 # Connect to Tello
 me = Tello()
@@ -72,32 +73,52 @@ while True:
     else:
         me.up_down_velocity = 0
 
+    # Display guidelines if enabled
+    if guidelines_enabled:
+        cv2.line(imgContour, (int(width / 2) - deadZone, 0), (int(width / 2) - deadZone, height), (255, 255, 0), 3)
+        cv2.line(imgContour, (int(width / 2) + deadZone, 0), (int(width / 2) + deadZone, height), (255, 255, 0), 3)
+        cv2.circle(imgContour, (int(width / 2), int(height / 2)), 5, (0, 0, 255), 5)
+        cv2.line(imgContour, (0, int(height / 2) - deadZone), (width, int(height / 2) - deadZone), (255, 255, 0), 3)
+        cv2.line(imgContour, (0, int(height / 2) + deadZone), (width, int(height / 2) + deadZone), (255, 255, 0), 3)
+
     # Display the image with tracking information
     cv2.imshow('Face Tracking', imgContour)
 
     # Send velocity commands to the Tello
     me.send_rc_control(me.left_right_velocity, me.for_back_velocity, me.up_down_velocity, me.yaw_velocity)
 
+    # Handle key presses
     # Break the loop when 'keys pressed' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         me.land()
         break
 
-    if cv2.waitKey(1) & 0xFF == ord('w'):
+    if cv2.waitKey(0) & 0xFF == ord('w'):
         me.move_forward(30)
-        break
 
-    if cv2.waitKey(1) & 0xFF == ord('s'):
+    if cv2.waitKey(0) & 0xFF == ord('s'):
         me.move_back(30)
-        break
 
-    if cv2.waitKey(1) & 0xFF == ord('a'):
+    if cv2.waitKey(0) & 0xFF == ord('a'):
         me.move_left(30)
-        break
 
-    if cv2.waitKey(1) & 0xFF == ord('d'):
+    if cv2.waitKey(0) & 0xFF == ord('d'):
         me.move_right(30)
-        break
+
+    if cv2.waitKey(0) & 0xFF == ord('g'):
+        guidelines_enabled = not guidelines_enabled
+
 
 # Clean up
 cv2.destroyAllWindows()
+
+# Land the drone and release the video stream
+me.land()
+me.streamoff()
+
+# Ensure the drone is landed before exiting
+while not me.land():
+    pass
+
+# Release the drone resources and safely exit the program
+me.release()
