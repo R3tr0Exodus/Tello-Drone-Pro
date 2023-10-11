@@ -1,0 +1,65 @@
+import cv2
+import time
+
+from djitellopy import Tello
+
+tello = Tello()
+
+tello.connect()
+
+tello.streamon()
+
+frame_read = tello.get_frame_read()
+
+tello.takeoff()
+
+tello.move_up(600)
+
+time.sleep(10) # Wait 5 seconds
+
+# takeoff
+tello.move_forward(400)
+
+time.sleep(10) # Wait 5 seconds
+
+# takeoff
+tello.rotate_clockwise(90)
+
+tello.move_forward(200)
+
+time.sleep(10) # Wait 5 seconds
+
+tello.rotate_clockwise(90)
+
+tello.move_forward(50)
+
+tello.rotate_clockwise(90)
+
+time.sleep(10) # wait 5 second
+
+# takeoff
+tello.move_forward(200)
+
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(50)
+
+tello.rotate_counter_clockwise(90)
+
+tello.move_forward(800)
+
+tello.rotate_clockwise(90)
+
+tello.move_forward(300)
+
+tello.rotate_clockwise(90)
+
+tello.move_forward(800)
+
+cv2.imwrite("GangGang.png", frame_read.frame)
+
+tello.land()
+
+tello.turn_motor_off()
+
+tello.disconect()
